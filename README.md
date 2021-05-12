@@ -75,11 +75,21 @@ Git命令基础操作=>自用
 
 ### git push origin
 
-1. ​	删除远程仓库的指定远程分支
+1. 删除远程仓库的指定远程分支
 
 ```bash
 git push origin --delete [`远程分支名`]
 ```
+
+2. 强制推送
+
+```bash
+git push -f 
+```
+
+> 用于解决一些本地和远程始终不能同步[当前git pull无效]的问题，比如
+>
+> Updates were rejected because the tip of your current branch is behind  its remote counterpart. Integrate the remote changes(e.g.'git pull ...') before pushing again. 
 
 ### git remote
 
